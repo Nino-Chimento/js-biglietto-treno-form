@@ -11,10 +11,10 @@ buttonGenera.addEventListener( "click",
     var etaViaggiatore = viaggiatore.value;
     console.log(etaViaggiatore);
     var costoAlKm = 0.21;
-    var prezzoPieno = costoAlKm * distanzaViaggio;
-    
-    if (etaViaggiatore == under) {
-      var costoBiglietto = prezzoPieno*20/100;
+    var costoBiglietto = costoAlKm * distanzaViaggio;
+
+    if (etaViaggiatore == "under") {
+      costoBiglietto -= (costoBiglietto*20/100);
       console.log(costoBiglietto);
     }
   }
