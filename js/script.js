@@ -26,7 +26,17 @@ buttonGenera.addEventListener( "click",
     document.getElementById('numero-prenotazione').innerHTML =
     Math.floor(Math.random() * (100000 - 90000) ) + 9000;
     document.getElementById('costo').innerHTML = costoBiglietto;
-    bigliettoApparizione = document.getElementById("apparizione")
+    bigliettoApparizione = document.getElementById("apparizione");
     bigliettoApparizione.classList.remove("hidden");
   }
 )
+var buttonAnnulla = document.getElementById('annulla');
+buttonAnnulla.addEventListener("click",
+  function(){
+    document.getElementById("tipo-offerta").innerHTML = " ";
+    document.getElementById('numero-carrozza').innerHTML = " "
+    bigliettoSparizione = document.getElementById("apparizione");
+    bigliettoSparizione.classList.add("hidden")
+  }
+
+);
