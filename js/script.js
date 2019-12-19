@@ -13,6 +13,9 @@ buttonGenera.addEventListener( "click",
     var costoAlKm = 0.21;
     var costoBiglietto = costoAlKm * distanzaViaggio;
     var tipologiaOfferta = "standard"
+    var data = document.getElementById('date');
+    var dataInput = data.value;
+    console.log(dataInput);
     if (etaViaggiatore == "under") {
       costoBiglietto -= (costoBiglietto*20/100);
       tipologiaOfferta = "Junior"
@@ -25,7 +28,7 @@ buttonGenera.addEventListener( "click",
     document.getElementById('numero-carrozza').innerHTML = Math.floor(Math.random() * 10);
     document.getElementById('numero-prenotazione').innerHTML =
     Math.floor(Math.random() * (100000 - 90000) ) + 9000;
-    document.getElementById('costo').innerHTML = costoBiglietto;
+    document.getElementById('costo').innerHTML = costoBiglietto.toFixed(2);
     bigliettoApparizione = document.getElementById("apparizione");
     bigliettoApparizione.classList.remove("hidden");
   }
