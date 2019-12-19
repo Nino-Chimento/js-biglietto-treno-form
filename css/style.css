@@ -84,6 +84,9 @@ button:hover {
   float: left;
   width:20%;
 }
+h4 {
+  padding: 20px;
+}
 .dettagli-finali-passeggero{
   float: left;
   background-color:  white;
@@ -102,4 +105,5 @@ th {
 }
 td {
   text-align: center;
+  padding: 30px;
 }
