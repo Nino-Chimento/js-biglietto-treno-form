@@ -12,14 +12,16 @@ buttonGenera.addEventListener( "click",
     console.log(etaViaggiatore);
     var costoAlKm = 0.21;
     var costoBiglietto = costoAlKm * distanzaViaggio;
-
+    var tipologiaOfferta = "standard"
     if (etaViaggiatore == "under") {
       costoBiglietto -= (costoBiglietto*20/100);
-
+      tipologiaOfferta = "Junior"
     }
     else if (etaViaggiatore == "Over65") {
       costoBiglietto -= (costoBiglietto*40/100);
+      tipologiaOfferta = Silver
     }
+    document.getElementById("tipo-offerta").innerHTML = tipologiaOfferta;
     document.getElementById('numero-carrozza').innerHTML = Math.floor(Math.random() * 10);
     document.getElementById('numero-prenotazione').innerHTML =
     Math.floor(Math.random() * (100000 - 90000) ) + 9000;
