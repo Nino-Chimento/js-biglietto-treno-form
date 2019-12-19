@@ -5,7 +5,10 @@ buttonGenera.addEventListener( "click",
     var nome = nomeutente.value;
     console.log(nome);
     var km = document.getElementById("distanza");
-    var distanzaViaggio = km.value;
+    var distanzaViaggio = parseInt(km.value);
     console.log(distanzaViaggio);
+    var viaggiatore = document.getElementById('eta');
+    var etaViaggiatore = viaggiatore.value;
+    console.log(etaViaggiatore);
   }
 )
