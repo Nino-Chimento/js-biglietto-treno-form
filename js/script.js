@@ -17,5 +17,12 @@ buttonGenera.addEventListener( "click",
       costoBiglietto -= (costoBiglietto*20/100);
       console.log(costoBiglietto);
     }
+    else if (etaViaggiatore == "Over65") {
+      costoBiglietto -= (costoBiglietto*40/100);
+      console.log(costoBiglietto);
+    }
+    {
+
+    }
   }
 )
