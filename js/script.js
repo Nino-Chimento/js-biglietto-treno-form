@@ -3,7 +3,7 @@ buttonGenera.addEventListener( "click",
   function () {
     var nomeInput = document.getElementById('nomeutente');
     var nome = nomeutente.value;
-    console.log(nome);
+    document.getElementById('stampaNomeUtente').innerHTML = nome;
     var km = document.getElementById("distanza");
     var distanzaViaggio = parseInt(km.value);
     console.log(distanzaViaggio);
@@ -12,7 +12,8 @@ buttonGenera.addEventListener( "click",
     console.log(etaViaggiatore);
     var costoAlKm = 0.21;
     var prezzoPieno = costoAlKm * distanzaViaggio;
-    if (etaViaggiatore == Under18) {
+    
+    if (etaViaggiatore == under) {
       var costoBiglietto = prezzoPieno*20/100;
       console.log(costoBiglietto);
     }
