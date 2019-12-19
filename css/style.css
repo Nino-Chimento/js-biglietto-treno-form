@@ -13,9 +13,43 @@ h2 {
   color: white;
   margin-top: 100px;
 }
-.dati-biglietto {
+.dati-biglietto{
   width: 80%;
   margin: auto;
   background-color: white;
   border-radius: 10px;
+}
+.flex {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: #B91350;
+}
+label {
+  margin-bottom: 10px;
+}
+input {
+  border-radius: 6px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  border-color: #B91350;
+}
+input:focus,
+select:focus {
+  background-color: #B91350;
+  color: white;
+}
+select {
+  border-radius: 6px;
+  text-align: center;
+  height: 25px;
+  line-height: 25px;
+  border-color: #B91350;
 }
