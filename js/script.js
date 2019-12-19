@@ -26,5 +26,7 @@ buttonGenera.addEventListener( "click",
     document.getElementById('numero-prenotazione').innerHTML =
     Math.floor(Math.random() * (100000 - 90000) ) + 9000;
     document.getElementById('costo').innerHTML = costoBiglietto;
+    bigliettoApparizione = document.getElementById("apparizione")
+    bigliettoApparizione.classList.remove("hidden");
   }
 )

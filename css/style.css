@@ -92,3 +92,11 @@ button:hover {
 th {
   width: 25%;
 }
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+.block {
+  opacity: 1;
+  transition: 0,5s;
+}
