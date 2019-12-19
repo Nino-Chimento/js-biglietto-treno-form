@@ -71,3 +71,18 @@ button:hover {
   color: white;
   background-color:grey;
 }
+.biglietto-finale {
+  width: 80%;
+  margin: auto;
+  background-color: white;
+}
+.nome-passeggero-finale {
+  background-color: grey;
+  float: left;
+}
+.dettagli-finali-passeggero{
+  float: left;
+}
+th {
+  width: 25%;
+}
