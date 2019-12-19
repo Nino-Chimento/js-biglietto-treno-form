@@ -12,15 +12,15 @@
       <div class="flex">
         <div class="row">
           <label for="name">Nome Cognome</label>
-          <input type="text" name="nome-cognome" value="" placeholder="Nome">
+          <input id="nomeutente" type="text" name="nome-cognome" value="" placeholder="Nome">
         </div>
         <div class="row">
           <label for="distanza"> Km Da Percorrere</label>
-          <input type="number"  name="km" value="" min="1" max="10000" placeholder="distanza">
+          <input id="distanza" type="number"  name="km" value="" min="1" max="10000" placeholder="distanza">
         </div>
         <div class="row">
           <label for="eta"> Fascia D'età</label>
-          <select>
+          <select id="eta">
             <option value="">Maggiorenne</option>
             <option value="">Under18</option>
             <option value="">Over65</option>
@@ -28,8 +28,8 @@
         </div>
       </div>
       <div class="bottoni">
-        <button type="button" name="button">Genera</button>
-        <button type="button" name="button">Annulla</button>
+        <button id="genera"type="button" name="button">Genera</button>
+        <button id="annulla" type="button" name="button">Annulla</button>
       </div>
     </div>
     <h2>Il Tuo Biglietto</h2>
