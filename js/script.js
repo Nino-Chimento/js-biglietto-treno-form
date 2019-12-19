@@ -19,7 +19,7 @@ buttonGenera.addEventListener( "click",
     }
     else if (etaViaggiatore == "Over65") {
       costoBiglietto -= (costoBiglietto*40/100);
-      tipologiaOfferta = Silver
+      tipologiaOfferta = "Silver"
     }
     document.getElementById("tipo-offerta").innerHTML = tipologiaOfferta;
     document.getElementById('numero-carrozza').innerHTML = Math.floor(Math.random() * 10);
@@ -34,9 +34,9 @@ var buttonAnnulla = document.getElementById('annulla');
 buttonAnnulla.addEventListener("click",
   function(){
     document.getElementById("tipo-offerta").innerHTML = " ";
-    document.getElementById('numero-carrozza').innerHTML = " "
+    document.getElementById("nomeutente").value = " "
+    document.getElementById("distanza").value = " "
     bigliettoSparizione = document.getElementById("apparizione");
     bigliettoSparizione.classList.add("hidden")
   }
-
 );
