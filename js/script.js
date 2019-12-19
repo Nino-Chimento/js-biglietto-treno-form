@@ -15,14 +15,14 @@ buttonGenera.addEventListener( "click",
 
     if (etaViaggiatore == "under") {
       costoBiglietto -= (costoBiglietto*20/100);
-      console.log(costoBiglietto);
+
     }
     else if (etaViaggiatore == "Over65") {
       costoBiglietto -= (costoBiglietto*40/100);
-      console.log(costoBiglietto);
     }
-    {
-
-    }
+    document.getElementById('numero-carrozza').innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById('numero-prenotazione').innerHTML =
+    Math.floor(Math.random() * (100000 - 90000) ) + 9000;
+    document.getElementById('costo').innerHTML = costoBiglietto;
   }
 )
