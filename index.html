@@ -8,5 +8,23 @@
   </head>
   <body>
     <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="dati-biglietto">
+      <div class="row">
+        <label for="name">Nome Cognome</label>
+        <input type="text" name="nome-cognome" value="" placeholder="Nome">
+      </div>
+      <div class="row">
+        <label for="distanza"> Km Da Percorrere</label>
+        <input type="number"  name="km" value="" min="1" max="10000" placeholder="distanza">
+      </div>
+      <div class="row">
+        <label for="eta"> Fascia D'età</label>
+        <select>
+          <option value="">Maggiorenne</option>
+          <option value="">Under18</option>
+          <option value="">Over65</option>
+        </select>
+      </div>
+    </div>
   </body>
-</html>
+  </html>
