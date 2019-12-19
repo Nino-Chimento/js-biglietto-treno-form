@@ -13,7 +13,7 @@ buttonGenera.addEventListener( "click",
     var costoAlKm = 0.21;
     var costoBiglietto = costoAlKm * distanzaViaggio;
     var tipologiaOfferta = "standard"
-    var data = document.getElementById('date');
+    var data = document.getElementsByClassName('mydatetime');
     var dataInput = data.value;
     console.log(dataInput);
     if (etaViaggiatore == "under") {
